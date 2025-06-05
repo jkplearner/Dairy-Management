@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Inventory Tracker" icon-name="utility:stock">
+        <lightning-datatable
+            key-field="id"
+            data={inventoryItems}
+            columns={columns}
+            hide-checkbox-column="true">
+        </lightning-datatable>
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+        </template>
+    </lightning-card>
+</template>

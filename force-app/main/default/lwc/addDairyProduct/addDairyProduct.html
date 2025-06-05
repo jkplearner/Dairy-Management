@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Add Dairy Product" icon-name="standard:product">
+        <div class="slds-p-around_medium">
+            <lightning-record-edit-form object-api-name="Dairy_Product__c" onsuccess={handleSuccess}>
+                <lightning-messages></lightning-messages>
+
+                <!-- Name Field -->
+                <lightning-input-field field-name="Name"></lightning-input-field>
+
+                <!-- Expiry Date Field -->
+                <lightning-input-field field-name="Expiry_Date__c"></lightning-input-field>
+
+                <!-- Price Field -->
+                <lightning-input-field field-name="Price__c"></lightning-input-field>
+
+                <!-- Product Type Picklist Field -->
+                <lightning-input-field field-name="Product_Type__c"></lightning-input-field>
+
+                <!-- Submit Button -->
+                <lightning-button variant="brand" type="submit" label="Add Product"></lightning-button>
+            </lightning-record-edit-form>
+        </div>
+    </lightning-card>
+</template>

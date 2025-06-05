@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Product Catalog" icon-name="standard:product">
+        <lightning-datatable
+            key-field="id"
+            data={products}
+            columns={columns}
+            hide-checkbox-column="true"
+            onsort={handleSort}>
+        </lightning-datatable>
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+        </template>
+    </lightning-card>
+</template>

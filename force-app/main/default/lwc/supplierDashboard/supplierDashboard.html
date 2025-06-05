@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Supplier Dashboard" icon-name="standard:account">
+        <lightning-datatable
+            key-field="id"
+            data={suppliers}
+            columns={columns}
+            hide-checkbox-column="true"
+            onsort={handleSort}>
+        </lightning-datatable>
+        <template if:true={isLoading}>
+            <lightning-spinner alternative-text="Loading" size="small"></lightning-spinner>
+        </template>
+    </lightning-card>
+</template>

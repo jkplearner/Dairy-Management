@@ -69,12 +69,12 @@ force-app/main/default/triggers/*
 force-app/main/default/lwc/*
 
 # But don't ignore these specific LWC folders and everything inside them:
-!force-app/main/default/lwc/addDairyProduct/**
-!force-app/main/default/lwc/inventoryTracker/**
-!force-app/main/default/lwc/revenueChart/**
-!force-app/main/default/lwc/supplierDashboard/**
-!force-app/main/default/lwc/productCatalog/**
-!force-app/main/default/lwc/expirynotification/**
+!force-app/main/default/lwc/addDairyProduct/
+!force-app/main/default/lwc/inventoryTracker/
+!force-app/main/default/lwc/revenueChart/
+!force-app/main/default/lwc/supplierDashboard/
+!force-app/main/default/lwc/productCatalog/
+!force-app/main/default/lwc/expirynotification/
 
 # Include important metadata folders
 !force-app/main/default/objects/**

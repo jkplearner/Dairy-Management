@@ -65,26 +65,16 @@ force-app/main/default/triggers/*
 !force-app/main/default/triggers/InventoryTrigger.trigger-meta.xml
 
 
-# Ignore all Lightning components except these (edit as needed)
+# Ignore all LWCs except the ones listed below
 force-app/main/default/lwc/*
-!force-app/main/default/lwc/addDairyProduct/addDairyProduct.js
-!force-app/main/default/lwc/addDairyProduct/addDairyProduct.html
-!force-app/main/default/lwc/addDairyProduct/addDairyProduct.js-meta.xml
-!force-app/main/default/lwc/inventoryTracker/inventoryTracker.js
-!force-app/main/default/lwc/inventoryTracker/inventoryTracker.html
-!force-app/main/default/lwc/inventoryTracker/inventoryTracker.js-meta.xml
-!force-app/main/default/lwc/revenueChart/revenueChart.js
-!force-app/main/default/lwc/revenueChart/revenueChart.html
-!force-app/main/default/lwc/revenueChart/revenueChart.js-meta.xml
-!force-app/main/default/lwc/supplierDashboard/supplierDashboard.js
-!force-app/main/default/lwc/supplierDashboard/supplierDashboard.html
-!force-app/main/default/lwc/supplierDashboard/supplierDashboard.js-meta.xml
-!force-app/main/default/lwc/productCatalog/productCatalog.js
-!force-app/main/default/lwc/productCatalog/productCatalog.html  
-!force-app/main/default/lwc/productCatalog/productCatalog.js-meta.xml
-!force-app/main/default/lwc/expirynotification/expirynotification.js
-!force-app/main/default/lwc/expirynotification/expirynotification.html
-!force-app/main/default/lwc/expirynotification/expirynotification.js-meta.xml
+
+# But don't ignore these specific LWC folders and everything inside them:
+!force-app/main/default/lwc/addDairyProduct/**
+!force-app/main/default/lwc/inventoryTracker/**
+!force-app/main/default/lwc/revenueChart/**
+!force-app/main/default/lwc/supplierDashboard/**
+!force-app/main/default/lwc/productCatalog/**
+!force-app/main/default/lwc/expirynotification/**
 
 # Include important metadata folders
 !force-app/main/default/objects/**
